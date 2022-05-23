@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preload"  href="estilos.css" as="style">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario de registro - Mi web</title>
+</head>
+<body>
+    <form action="" method="get">
+    <h1>Formulario de registro - Mi web</h1>
+    
+    <!-- <h3>Pagina web para el registro de información del personal de la empresa ABC</h3> -->
+    <h2>Información</h2>
+    
+    <div>
+        <label for="apellidos">Apellidos</label>
+
+        <input type="text" placeholder="Tu apellido" name="apellido" size="40" required="" size="40">
+    </div>
+    <br/>
+
+    <div class="nombreDiv">
+        
+      <label for="nombres">Nombres:</label>
+      <input type="text" placeholder="Tu nombre" name="nombre" size="40" required="">
+    </div>
+    <br/>
+    <div>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" placeholder="Tu direccion" name="domicilio" size="40" required="" maxlength="8">
+    </div>
+    <br/>
+    <!-- <div>
+        
+        <label for="contrasenia">Contraseña:</label>
+        <input type="password" placeholder="Minimo 6 digitos" name="clave" size="10" required="" minlength="6">
+     </div>
+    <br/> -->
+    <!-- <div>
+        
+        <label>Edad mayor que 18:</label>
+        <input type="number"  name="edad" size="40" required="" min="18">
+    </div>
+      <br/> -->
+    <!-- <div>
+        <label>Escoja un color:</label>
+        <input type="color" name="colorelegido">
+    </div>
+    <br/>  --> 
+    <!-- <div>
+      <label>Año de nacimiento:</label>
+      <input type="number" placeholder="Fecha de nacimiento" name="nacio" min="1900" size="40">
+    </div>
+    <br/>
+    <div>
+        Mes: <input type="month" name="mes">
+    </div>
+    <br/> -->
+    <div>
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" size="40" placeholder="Tu correo" maxlength="100">
+    </div>
+    <br/>
+    
+    <div>
+
+        <label for="sexo">Género:</label>
+        <input type="radio" name="hm" value="x" required=""> No definido
+        <input type="radio" name="hm" value="h" required=""> Hombre
+        <input type="radio" name="hm" value="m" required=""> Mujer
+    </div>
+    <br/>
+    <!-- <div>
+        <label>Conocimientos:</label>
+        <input type="checkbox" name="casilla"> Java
+        <input type="checkbox" name="casilla"checked>  c++
+        <input type="checkbox" name="casilla"> Python
+    </div>
+    <br/> -->
+    <div>
+        <p>
+            <label for="poblacion">Población</label>
+            <select name="poblacion" id="poblacion">
+                <option>Alicante</option>
+                <option>Madrid</option>
+                <option>Sevilla</option>
+                <option>Valencia</option>
+
+            </select>
+
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="descripcion">Descripcion:</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="6"></textarea>
+        </p>
+    </div>
+    <br/>
+    <div>
+        <p>
+            <label for="verficiacion"></label>
+            <div>
+                <input type="checkbox" name="recibir informacion"> Deseo recibir información sobre novedades y ofertas
+            </div>
+            <br/>
+            <div>
+                <input type="checkbox" name="terminos y condiciones"checked>  Declaro haber leido y aceptado los terminos 
+                y condiciones generales del programa y la normativa sobre protección de datos
+            </div>
+            
+            
+        </p>
+        
+        
+    </div>
+    <div>
+
+      <input type="submit" value="Enviar">
+      <input type="reset" value= "Borrar">
+    </div>
+    </form>
+    <footer>
+        <p>By Leonardo De La Cadena</p>
+        <p>NRC: 8493 - Programación Web</p>
+    </footer>
+    <!-- <H1>Mi Pagina Web</H1>
+    saludos - hola
+    <script type="text/javascript">
+        var a = 10;
+        var b = 5;
+        alert("la variable a ="+ a);
+        alert("la variable b ="+ b);
+        c = a + b;
+        alert("Valor de a + b ="+c);
+        alert("Valor de a + b ="+(a*b));
+        alert("Valor de "+a+"-"+b+"="+(a-b));
+
+    </script> -->
+    
+    
+</body>
+</html>

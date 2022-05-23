@@ -1,0 +1,18 @@
+html{
+    background-color:skyblue;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+input{
+    background-color:powderblue;
+    font-family: 'Quicksand', sans-serif;
+}
+textarea{
+    background-color: powderblue;
+    font-family: 'Quicksand', sans-serif;
+}
+select{
+    background-color: powderblue;
+    font-family: 'Quicksand', sans-serif;
+}
