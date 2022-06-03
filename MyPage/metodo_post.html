@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo POST</title>
+</head>
+<body>
+    <form action="validar.php" method="post">
+
+        <h2>Formulario de registro - METODO POST</h2>
+        <p>
+            Nombre: <input type="text "name="nombre"/><br/>
+        </p>
+        <p>
+            
+            Apellido: <input type="text" name="apellido"/><br/>
+        </p>
+        <p>
+
+            Genero:
+            Hombre<input type="radio" name="hm" value="h"/>
+            Mujer<input type="radio" name="hm" value="m"/>
+            
+        </p>
+        <p>
+            Correo:<input type="mail" name="correo"/>
+        </p>
+        <p>
+
+            <input type="checkbox" name="recibir-info"/>Deseo recibir informacion sobre novedades
+        </p>
+        
+        <p>
+
+            <input type="checkbox" name="terminos-condiciones"checked/>Declaro haber leido los terminos y condiciones
+        </p>
+        
+        <input type="submit"name="enviar" value="Enviar"/> 
+    </form>
+</body>
+</html>
