@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 body{
@@ -148,7 +149,7 @@ nav{
     justify-content: space-around;
 }
 .articulo{
-    width: 29%;
+    width: 30%;
     background: #fff;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -159,14 +160,15 @@ nav{
     box-shadow: 0 4px 10px rgba(17,29,48,.26);
 }
 .articulo>i{
-    font-size: 27px;
+    font-size: 25px;
     color: #fff;
     background:dodgerblue;
     display: inline-block;
-    width: 55px;
-    height: 45px;
+    width: 70px;
+    height: 70px;
     text-align:center;
-    padding-top: 20px;
+    padding: 20px 20px;
+    /* padding-top: 20px; */
     /* padding: 20px, 10px,5px,10px; */
     border-radius: 50%;
     box-shadow: 0 8px 32px rgba(63, 193, 245, .46);
@@ -245,7 +247,7 @@ nav{
     justify-content: space-evenly;
 }
 .numbers .number{
-    width:45%;
+    width:40%;
     background:rgba(255,255,255,.2);
     color:#fff;
     border-radius:10px;
@@ -362,11 +364,31 @@ footer{
 /* .social-media i:hover fa-brands:hover fa-facebook:hover{
     
 } */
-.social-media i:hover{
+/* .social-media i:hover{
     
     color:#fff;
     background-color: #2570ff;
     border-color: #2570ff;
+} */
+.fa-facebook:hover{
+    color:#fff;
+    background-color: #2570ff;
+    border-color:#2570ff;
+}
+.fa-instagram:hover{
+    color:#fff;
+    background-color:#C13584;
+    border-color: #C13584;
+}
+.fa-tiktok:hover{
+    color:#fff;
+    background-color: #000;
+    border-color: #000;
+}
+.fa-youtube:hover{
+    color:#fff;
+    background-color: red;
+    border-color: red;
 }
 /* Breakpoints responsive */
 @media screen and (max-width:800px){
