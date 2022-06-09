@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<time.h>
 #include <omp.h>
+#include <cstdlib>
+#include <sys/time.h>
 using namespace std;
 
 
@@ -57,8 +59,8 @@ void ingresar() {
 	for (int i = 0; i < dimen; i++)
 		for (int j = 0; j < dimen; j++) {
 			dato = 1 + rand() % (11 - 1);
-			cout << "Posicion de [" << i + 1 << "][" << j + 1 << "]: ";
-			cout <<"numero "<< dato << endl;
+			//cout << "Posicion de [" << i + 1 << "][" << j + 1 << "]: ";
+			//cout <<"numero "<< dato << endl;
 			*(*(matriz + i) + j) = dato;
 		}
 }
@@ -87,8 +89,8 @@ void multiplicar(int n, double **&A,double **&B, double **&C){
 }
 
 
-void multiplicarParalelo(int n, int p,double **&A,double **&B,
-  double **&C){
+void multiplicarParalelo(int n, int p,int **&A,int **&B,
+  int **&C){
   #pragma omp parallel
   {
     int first = omp_get_thread_num()*n/p;
@@ -135,17 +137,38 @@ void multiplicarParaleloRec(int p,int q,int r,int w,double **&A,
 }
 
 
-int main()
+int main(int argc, char **argv)
 {
 	//int** matriz;
-	//int	dimen;
+	int	dimen;
 	cout << "Ingrese el tamanio de la matriz: " << endl;
 	cin >> dimen;
-	setDimension(dimen);
-	segmentar();
-	encerar();
-	ingresar();
-	imprimir();
+    int n = atoi(argv[dimen]);
+    int p = atoi(argv[2]);
+    omp_set_num_threads(p);
+    int **A, **B, **C;
+
+	A=setDimension(dimen);
+	A=segmentar();
+	A=encerar();
+	A=ingresar();
+
+	B=setDimension(dimen);
+	B=segmentar();
+	B=encerar();
+	B=ingresar();
+
+	C= setDimension(dimen);
+	struct timeval start, end;
+	gettimeofday(&start, NULL);
+    multiplicarParalelo(n,p,A,B,C);
+	//imprimir();
+
 	printf("\n\n");
+
+	gettimeofday(&end, NULL);
+	double delta = ((end.tv_sec - start.tv_sec) * 1000000u +
+		end.tv_usec - start.tv_usec) / 1.e6;
+	std::cout << "Tiempo en segundos: " << delta << std::endl;
     return 0;
 }
