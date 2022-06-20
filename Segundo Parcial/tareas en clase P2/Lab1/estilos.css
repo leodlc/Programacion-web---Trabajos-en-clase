@@ -1,0 +1,18 @@
+p{
+    width: 500px;
+    /* border: 8px solid black; */
+}
+P,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:blue;
+}
+div{
+    border:8px;
+    border-width: 2px solid #a1a1a1;
+    border-style: ridge;
+    border-color: brown;
+    border-radius: 10px;
+    /* background-image: url(); */
+    padding: 20px;
+    width: 150px;
+}
