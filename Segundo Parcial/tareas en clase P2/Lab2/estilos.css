@@ -1,4 +1,7 @@
+
+
 body{
+    font-family: 'Martel Sans', sans-serif;
     background-color: rgb(0,0,0);
     color: rgb(255,255,255);
     background-image: url("img/fondo-netflix.jpg");
@@ -8,17 +11,149 @@ body{
     background-attachment: fixed;
     margin: 0;
 }
-#contenido{
+
+#contenido {
     background-color: rgba(0,0,0,0.5);
-    height: 100vh;
+    height: 130vh;
 }
-#contenido .div .img{
-    width: 180px;
+#formulario{
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(0,0,0,0.75);
+    width: 300px;
+    /* height: 700px; */
+     height: fit-content;
+    /* height: auto; */
+    border-radius: 5px;
+    padding: 30px 50px;
+    color: rgb(255,255,255);
+    margin-left: auto;
+    margin-right: auto;
+   
+    transition: background-color .3s ease-in-out;
+    
 }
+#formulario:hover{
+    background-color: black;
+}
+#formulario h1{
+    font-size: 32px;
+    font-weight: 500px;
+}
+
+#formulario .control{
+    font-family: 'Martel Sans', sans-serif;
+}
+
 #logo{
-    padding: 25px;
-    width: 180px;
+    padding-top: 0;
+    padding-left: 40px;
+    width: 160px;  
+}
+
+input{
+    
+    background-color: rgb(36, 35, 35);
+    border-color: black;
+    line-height: normal;
+    color: #fff;
+}
+
+
+.control{
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 8px;
+    border-width: 0px;
     
 }
+.caja-texto{
+    background-color: #333333;
     
+}
+.boton{
+    font-weight: bold;
+    background-color: #E50916;
+    margin-top: 30PX;
+    color: #fff;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: #80050d;
+}
+label{
+    color: rgb(165, 165, 165);
+    font-size: .8rem;
+}
+.help-link{
+    float: right;
+    color: rgb(165, 165, 165);
+    text-decoration: none;
+    font-size: .8rem;
+}
+h5{
+    color: rgb(165, 165, 165);
+}
+h6{
+    color: rgb(165, 165, 165);
+}
+.sub{
+    color: rgb(219, 216, 216);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: lighter;
+
+}
+.sub:hover{
+    text-decoration:underline;
+}
+.info{
+    color: royalblue;
+}
+
+
+
+.footer-fin{
+    display: inline-block;
+    padding-top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.85);
+    padding: 30px 0;
+    margin:  0 auto;
+    /* height: 300px; */
+    
+}
+.contenedor-footer{
+    padding-right: 100px;
+    padding-left: 100px;
+    
+}
+.texto-footer{
+    color: rgb(165, 165, 165);
+    font-weight: lighter;
+}
+.preguntasF{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.links-preguntasF{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+    font-size: small;
+    
+}
+.links-preguntasF:hover{
+    text-decoration: underline;
+}
+footer{
+    padding-top: 10px;
+    color: rgb(165, 165, 165);
+    font-weight: lighter;
+    font-size: .8rem;
+}
 
