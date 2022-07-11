@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/animacion.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>App Java Script Animación</title>
+</head>
+<body>
+    
+
+        <h1>Movimiento de un objeto</h1>
+        <hr />
+        <form action="">
+            
+            <div id="buttons">
+                <input type="button" name="hide" value="Hide" onclick="hideSquare()">
+                <input type="button" name="show" value="Side" onclick="showSquare()">
+                <input type="button" name="left" value="Left" onclick="pos(-1,0)">
+                <input type="button" name="right" value="Right" onclick="pos(1,0)">
+                <input type="button" name="top" value="Top" onclick="pos(0,-1)">
+                <input type="button" name="botton" value="Botton" onclick="pos(0,1)">
+                
+            </div>
+        </form>
+        <hr />
+        
+            
+            <div id="cuadrado">
+                <p>Recuadro que será posicionado con la selección de los botones</p>
+            </div>
+        
+    </body>
+    </html>
