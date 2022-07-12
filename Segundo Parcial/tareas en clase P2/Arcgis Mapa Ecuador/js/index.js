@@ -1,3 +1,20 @@
+class ProvinciaCollection{
+    constructor(items){
+        this.items=items
+    }
+    first(){
+        return new ProvinciaPath(this.items[0])
+    }
+    find(index){
+        return new ProvinciaPath(this.items[index])
+    }
+    last(){
+
+    }
+    static get(){
+        return new ProvinciaCollection(document.querySelectorAll("path"))
+    }
+}
 class ProvinciaPath{
     constructor(element){
         this.element=element
@@ -15,6 +32,4 @@ class ProvinciaPath{
     }
     
 }
-
-ProvinciaPath.findByName("imbabura")
-
+/* console.log(ProvinciaCollection.get().find(2).fill("red")) */

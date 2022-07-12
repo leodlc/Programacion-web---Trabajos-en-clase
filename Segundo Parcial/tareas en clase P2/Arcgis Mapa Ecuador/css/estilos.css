@@ -1,0 +1,16 @@
+body{
+    background: cornflowerblue;
+    display: flex;
+    place-content: center center;
+}
+
+.mapa-ecu{
+    width: 50%;
+}
+.mapa-ecu path{
+    fill:forestgreen;
+    stroke:black;
+}
+.mapa-ecu :hover{
+    fill:olive;
+}
