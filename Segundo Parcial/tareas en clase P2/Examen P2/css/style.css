@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Actor', sans-serif;
+}
+/* Navegacion */
+.navegacion{
+    width: 400px 400px;
+}
+
+.enlaces{
+    text-align: right;
+}
+
+.enlaces a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.enlaces a:hover{
+    color:dodgerblue;
+}
+/* Navegacion Fin */
+
+/* Informacion */
+
+.info-general h1{
+    text-align: center;
+    font-size: 80px;
+}
+
+.info-general h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.info-general p{
+    text-align: center;
+}
+
+/* Informacion fin */
+
+/* Participantes */
+
+.contenedor-participantes h2{
+    font-size: 40px;
+}
+
+.contenedor-participantes h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Participantes fin */
+
+/* Proyectos */
+.contenedor-proyectos h2{
+    font-size: 40px;
+}
+
+
+/* Proyectos fin */
