@@ -7,47 +7,283 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <link rel="preload"  href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/style.css">
-    <title>Grupo de investigación</title>
+    <link rel="stylesheet" href="css/style_slider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>ScieCore</title>
 </head>
 <body>
-    <section class="navegacion">
-        <div class="contenedor-logo">
-            <!-- <i></i> -->
-        </div>
-        <div class="enlaces">
-            <a href="#">Sobre Nosotros</a>
+    <header>
+        <nav>
             
-            <a href="#">Participantes</a>
+            <section class="navegacion">
+                <div class="logo">
+                    <img src="img/logoscie2.png" alt="">
+                </div>
+                <div class="enlaces-header">
+                        
+                    <a href="#">Sobre Nosotros</a>
+                
+                    <a href="#">Participantes</a>
+                
+                    <a href="#">Proyectos</a>
+                
+                </div>
+                
+            </section>
+        </nav>
+        
+        <section class="info-general">
             
-            <a href="#">Proyectos</a>
-            
-            
-        </div>
-    </section>
-    <section class="info-general">
-        <h1>Grupo de Investigación</h1>
-        <!-- <img src="" alt=""> -->
-        <h3>Conoce sobre nuestro trabajo</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, atque? Lorem ipsum dolor sit amet consectetur.</p>
-    </section>
+            <div class="banner-content">
+                <h1>Grupo de Investigación ScieCore </h1>
+                <p>
+                    Nuestro labor es brindar una mejor calidad de vida hacia las personas
+                    mediante software. Trabajamos continuamente en la investigación de
+                    nuevas tecnologias y como estas ayudan en el desarrollo humano.
+                    
+                </p>
+                <h2>Conoce sobre nuestro trabajo</h2>
+                <a href="#">Ver articulos publicados</a>
+            </div>
+                          
+
+           
+           
+        </section>
+    </header>
     <section class="contenedor-participantes">
-        <h2>Conoce a nuestro equipo</h2>
-        <section class="investigadores">
-            <h3>Investigadores</h3>
+        <h2 class="titulo-participantes">Conoce a nuestro equipo</h2>
+
+
+        <section class="slider-investigadores">
+            <h3 class="subt-participantes">Investigadores</h3>
+            <div class="slider__container container" data-aos="fade-right">
+                
+                <img src="img/flecha-izquierda.svg" class="slider__arrow" id="before">
+
+                <section class="slider__body slider__body--show" data-id="1">
+                    <div class="slider__texts">
+                        <h2 class="subtitle">Phd.Carlos Paredes</h2>
+                        <p class="slider__review">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ea, enim?
+                        </p>
+                        
+                    </div>
+                    <figure class="slider__picture">
+                        <img src="img/investigador1.jpg" class="slider__img">
+                    </figure>
+                </section>
+                <section class="slider__body" data-id="2">
+                    <div class="slider__texts">
+                        <h2 class="subtitle">Phd.Alejandra Betancourt</h2>
+                        <p class="slider__review">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ea, enim?
+                        </p>
+                        
+                    </div>
+                    <figure class="slider__picture">
+                        <img src="img/investigador2.jpg" class="slider__img">
+                    </figure>
+                </section>
+                <section class="slider__body" data-id="3">
+                    <div class="slider__texts">
+                        <h2 class="subtitle">Dr. Fernando Villa</h2>
+                        <p class="slider__review">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ea, enim?
+                        </p>
+                        
+                    </div>
+                    <figure class="slider__picture">
+                        <img src="img/investigador3.jpg" class="slider__img">
+                    </figure>
+                </section>
+                <img src="img/flecha-derecha.svg"class="slider__arrow" id="next">
+            </div>
+            
         </section>
-        <section class="colaboradores">
-            <h3>Colaboradores</h3>
+
+
+        <section class="slider-colaboradores">
+            <h3 class="subt-participantes">Colaboradores</h3>
+            <div class="slider__container2 container " data-aos="fade-right">
+                <img src="img/flecha-izquierda.svg" class="slider__arrow2"id="before2">
+
+                <section class="slider__body2 slider__body2--show2" data-id="1">
+                    <div class="slider__texts2">
+                        <h2 class="subtitle">Universidad ESPE</h2>
+                        <p class="slider__review2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ea, enim?
+                        </p>
+                        
+                    </div>
+                    <figure class="slider__picture2">
+                        <img src="img/logo_espe.jpg" class="slider__img2">
+                    </figure>
+                </section>
+                <section class="slider__body2" data-id="2">
+                    <div class="slider__texts2">
+                        <h2 class="subtitle">Nvidia</h2>
+                        <p class="slider__review2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ea, enim?
+                        </p>
+                        
+                    </div>
+                    <figure class="slider__picture2">
+                        <img src="img/nvidialogo.png" class="slider__img2">
+                    </figure>
+                </section>
+                <section class="slider__body2" data-id="3">
+                    <div class="slider__texts2">
+                        <h2 class="subtitle2">IEE Xplore</h2>
+                        <p class="slider__review2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ea, enim?
+                        </p>
+                        
+                    </div>
+                    <figure class="slider__picture2">
+                        <img src="img/ieexplorelogo.png" class="slider__img2">
+                    </figure>
+                </section>
+                <img src="img/flecha-derecha.svg" class="slider__arrow2" id="next2">
+            </div>
         </section>
-        <section class="estudiantes">
-            <h3>Estudiantes</h3>
+
+
+        <section class="slider-estudiantes">
+            <h3 class="subt-participantes">Estudiantes</h3>
+            <div class="slider__container3 container" data-aos="fade-right">
+                <img src="img/flecha-izquierda.svg" class="slider__arrow3"id="before3">
+
+                <section class="slider__body3 slider__body3--show3" data-id="1">
+                    <div class="slider__texts3">
+                        <h2 class="subtitle">Estudiante Giuliana Fernandez</h2>
+                        <p class="slider__review3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ea, enim?
+                        </p>
+                        
+                    </div>
+                    <figure class="slider__picture3">
+                        <img src="img/estudiante1.jpg" class="slider__img3">
+                    </figure>
+                </section>
+                <section class="slider__body3" data-id="2">
+                    <div class="slider__texts2">
+                        <h2 class="subtitle">Estudiante Amelia Flores</h2>
+                        <p class="slider__review3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ea, enim?
+                        </p>
+                        
+                    </div>
+                    <figure class="slider__picture3">
+                        <img src="img/estudiante2.jpg" class="slider__img3">
+                    </figure>
+                </section>
+                <section class="slider__body3" data-id="3">
+                    <div class="slider__texts3">
+                        <h2 class="subtitle3">Estudiante Julio Paredes</h2>
+                        <p class="slider__review3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ea, enim?
+                        </p>
+                        
+                    </div>
+                    <figure class="slider__picture3">
+                        <img src="img/estudiante3.jpg" class="slider__img3">
+                    </figure>
+                </section>
+                <img src="img/flecha-derecha.svg" class="slider__arrow3" id="next3">
+            </div>
         </section>
-    </section>
-    <section class="contenedor-proyectos">
-        <h2>Proyectos en los que hemos trabajado</h2>
     </section>
 
-    <footer>Todos los derechos reservados - Leonardo De La Cadena</footer>
+
+    <section class="proyectos">
+        
+        <div class="contenedor">
+            <h2 class="titulo">Proyectos en los que estamos trabajando</h2>
+            <div class="contenedor-cartaproyecto">
+                <div class="cartaproyecto" data-aos="flip-up">
+                    <h3>Videojuegos</h3>
+                    <p>
+                        Los videojuegos ayudan a mejorar diversas habilidades a las personas
+                        que los juegan, como habilidades cognitivas, motrices, reflejos, entre otras.
+                        Hemos hecho varias investigaciones en este campo y se ha logrado aplicarlo para
+                        el mejorío de la vida de las personas
+                    </p>
+                    <a href="#">Ver papers relacionados</a>
+                </div>
+                <div class="cartaproyecto" data-aos="flip-up">
+                    <h3>Realidad aumentada</h3>
+                    <p>
+                        La realidad aumentada esta siendo de mucha utilidad en diversas areas, como el area de la salud,
+                        ya que brinda una simulación acercada a la realidad sin la necesidad de interactuar con objetos
+                        fisicamente. Se han aplicado varios proyectos de esta indole con resultados alentadores.
+                    </p>
+                    <a href="#">Ver papers relacionados</a>
+                </div>
+                <div class="cartaproyecto" data-aos="flip-up">
+                    <h3>Realidad virtual</h3>
+                    <p>
+                        La realidad virtual se aplica en bastantes campos, por lo cual es una necesidad a futuro para el
+                        aprendizaje en muchas ramas del conocimiento.
+                    </p>
+                    <a href="#">Ver papers relacionados</a>
+                </div>
+                <div class="cartaproyecto" data-aos="flip-up">
+                    <h3>Inteligencia Artificial</h3>
+                    <p>
+                        Se han hecho investigaciones respecto a la inteligencia artificial y las redes neuronales, hoy en
+                        día se las utiliza para varias cosas, como el manejo de la información, aprendizaje de patrones,
+                        asistentes virtuales, entre otros.
+                    </p>
+                    <a href="#">Ver papers relacionados</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="partFooter">
+            <h4>Grupo ScieCore &#9400Todos los derechos reservados </h4>
+            <h6>By Leonardo De La Cadena</h6>
+        </div>
+        <div class="partFooter">
+            <h4>Contactos</h4>
+            <a href="#">+593 83803090</a>
+            <a href="#">+593 2041837</a>
+            <a href="#">+593 89424651</a>
+        </div>
+        
+        <div class="partFooter">
+            <h4>Redes sociales</h4>
+            <div class="social-media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/7841fd6062.js" crossorigin="anonymous"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/slidercolab.js"></script>
+    <script src="js/sliderest.js"></script>
 </body>
 </html>
