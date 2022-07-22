@@ -1,6 +1,6 @@
 
 .slider2{
-    background-color: #DADDFC;
+    background-color: #ECB365;
     padding: 40px 0;
 }
 .slider__container2{
@@ -15,14 +15,14 @@
     opacity: 0;
     pointer-events:none;
     display:grid;
-    background-color: #DADDFC;
-    border:5px solid rgb(44, 61, 110);
+    background-color: #ECB365;
+    border:5px solid #064663;
     grid-template-columns: 1fr max-content;
     align-items: center;
     transition: opacity 1.5s;
-    height: 300px;
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 10px;
 }
 .slider__body2--show2{
@@ -62,7 +62,7 @@
 
 
 .slider3{
-    background-color: #DADDFC;
+    background-color: #ECB365;
     padding: 40px 0;
 }
 .slider__container3{
@@ -77,14 +77,14 @@
     opacity: 0;
     pointer-events:none;
     display:grid;
-    background-color: #DADDFC;
-    border:5px solid rgb(44, 61, 110);
+    background-color: #ECB365;
+    border:5px solid #064663;
     grid-template-columns: 1fr max-content;
     align-items: center;
     transition: opacity 1.5s;
-    height: 300px;
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 10px;
 }
 .slider__body3--show3{
@@ -95,7 +95,7 @@
     max-width: 600px;
 }
 .subtitle3{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 .slider_review3{
@@ -123,6 +123,7 @@
     .slider__body2{
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
+        padding: 0;
         gap:1em
     }
     .slider__picture2{
@@ -132,9 +133,15 @@
         width: 210px;
         height: 210px;
     }
+   
+    .slider__review2{
+        font-size: 0.8rem;
+        text-align: center;
+    }
     .slider__body3{
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
+        padding: 0;
         gap:1em
     }
     .slider__picture3{
@@ -144,6 +151,14 @@
         width: 210px;
         height: 210px;
     }
+    .slider__review3{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .subtitle3{
+        font-size: 1.5em;
+    }
+    
     
 }
 @media (max-width:425px){
@@ -160,7 +175,8 @@
         margin-bottom: 15px;
     }
     .slider__review2{
-        font-size: 1rem;
+        font-size: 0.8rem;
+        text-align: center;
         line-height: 1.6;
     }
     
@@ -172,11 +188,12 @@
         height: 180px;
     }
     .subtitle3{
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: 15px;
     }
     .slider__review3{
-        font-size: 1rem;
+        font-size: 0.8rem;
+        text-align: center;
         line-height: 1.6;
     }
     

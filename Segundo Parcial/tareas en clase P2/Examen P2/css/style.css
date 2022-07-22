@@ -5,9 +5,13 @@
     box-sizing: border-box;
     /* font-family: 'Actor', sans-serif; */
 }
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Raleway', sans-serif;
-    background-color: #396EB0;
+    background-color: #041C32;
 }
 /* Navegacion */
 header::before{
@@ -18,7 +22,8 @@ header::before{
 nav{
     width: 100%;
     height: 80px;
-    background: #396EB0;
+    /* background: #FC997C; */
+    background: #064663;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0,0,0,.2);
     position: fixed;
@@ -34,6 +39,11 @@ nav{
     align-items: center;
     padding: 0 40px;
 }
+.navegacion img{
+    padding-top: 10px;
+    width: 200px;
+    object-fit: cover;
+}
 
 
 .enlaces-header{
@@ -44,12 +54,12 @@ nav{
 .navegacion .enlaces-header a{
     
     text-decoration: none;
-    color: black;
+    color: #F5F5F5;
     font-weight: bold;
     margin-left: 20px;
 }
 .enlaces-header a:hover{
-    color:dodgerblue;
+    color:#ECB365;
     transition: ease-in-out 0.3s;
 }
 /* Navegacion Fin */
@@ -154,17 +164,19 @@ nav{
     text-align: center;
 } */
 .contenedor-participantes{
-    background-color: #DADDFC;
+    background-color: #04293A;
 }
 .titulo-participantes{
     text-align: center;
     font-size: 50px;
     padding-top: 20px;
     padding-bottom: 60px;
+    color:#ECB365;
 }
 .subt-participantes{
     text-align: center;
     font-size: 40px;
+    color:#ECB365
 }
 .container{
     width: 90%;
@@ -178,6 +190,7 @@ nav{
 .slider{
     background-color: #396EB0;
     padding: 40px 0;
+    
     
 }
 .slider__container{
@@ -194,15 +207,17 @@ nav{
     opacity: 0;
     pointer-events:none;
     display:grid;
-    background-color: #DADDFC;
+    background-color: #ECB365;
     grid-template-columns: 1fr max-content;
     align-items: center;
     transition: opacity 1.5s;
     border-radius: 10px;
-    border:5px solid rgb(44, 61, 110);
-    height: 300px;
-    padding-left: 15px;
-    padding-right: 15px;
+    border:5px solid #064663;
+    height: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* padding-left: 150px;
+    padding-right: 150px; */
 }
 .slider__body--show{
     opacity: 1;
@@ -221,6 +236,7 @@ nav{
     font-size: 20px;
     line-height: 1.7;
 }
+
 .slider__img{
     width: 230px;
     height: 230px;
@@ -229,11 +245,14 @@ nav{
     display: block;
     margin: 0 auto;
     
+    
 }
 .slider__arrow{
     cursor: pointer;
     width: 90%;
+    
 }
+
 
 .slider__arrow:nth-of-type(2){
     justify-self: end;
@@ -244,15 +263,25 @@ nav{
 /* Proyectos */
 .titulo{
     font-size: 50px;
+    color: #ECB365;
+    padding: 70px;
+    text-align: center;
+    
 }
 .proyectos{
-    background-color: #2E4C6D;
+    background-color: #041C32;
+    margin-bottom: 50px;
 }
 .contenedor{
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
+    justify-content: center;
+    
+}
+.contenedor h3{
+    text-align: center;
 }
 .contenedor-cartaproyecto{
     display: flex;
@@ -275,13 +304,19 @@ nav{
     justify-content: center;
     
     
+    
+    
+    
 }
 .cartaproyecto h3{
-    padding-bottom: 15px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    
 }
 .cartaproyecto p{
     padding-bottom: 30px;
     text-align: center;
+    font-weight: bolder;
 }
 .cartaproyecto a{
     text-decoration: none;
@@ -290,6 +325,7 @@ nav{
     border:1px solid rgb(218, 208, 208);
     padding: 9px 15px;
     transition: all .3s ease-in-out;
+    
     
 }
 .cartaproyecto a:hover{
@@ -303,30 +339,30 @@ nav{
 .cartaproyecto:first-child{
     background-image:linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
     ), url("../img/videogamedev.png")
     
 }
 .cartaproyecto:nth-child(2){
     background-image:linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
     ), url("../img/realidadaument.jpg")
 }
 .cartaproyecto:nth-child(3){
     background-image:linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
     ), url("../img/rvirtual.jpg")
 }
 .cartaproyecto:nth-child(4){
     background-image:linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
     ), url("../img/IA.jpg")
 }
 
@@ -335,7 +371,8 @@ nav{
 
 /* Footer */
 footer{
-    background: #FC997C;
+    /* background: #FC997C; */
+    background: #064663;
     padding: 60px 0;
     overflow: hidden;
     display: flex;
@@ -346,9 +383,10 @@ footer{
 .partFooter{
     width: 20%;
     text-align: center;
+    
 }
 .partFooter h4{
-    color: #1d273b;
+    color: #000;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 30px;
@@ -356,13 +394,13 @@ footer{
 .partFooter a {
     display: block;
     text-decoration: none;
-    color: #5D6678;
+    color: black;
     font-weight: 300;
     transition: color .3s ease-in-out;
     margin-bottom: 10px;
 }
 .partFooter a:hover{
-    color:dodgerblue;
+    color:#ECB365;
 }
 .social-media i{
     font-size: 20px;
@@ -402,7 +440,10 @@ footer{
     .slider__body{
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
+        padding: 0;
+        
         gap:1em
+        
     }
     .slider__picture{
         grid-row:1/2;
@@ -416,10 +457,34 @@ footer{
     }
 }
 @media (max-width:650px){
+    /* info general */
+    .info-general{
+        background-size: cover;
+        
+    }
+    .banner-content{
+        justify-content: flex-end;
+        padding-bottom: 40px;
+    }
+    .banner-content h1{
+        padding: 10px;
+        font-size: 40px;
+    }
+    .banner-content p{
+        text-align:center;
+        font-size: 20px;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    /* info general fin */
+    
     .slider__container{
         grid-template-columns: 25px 1fr 25px;
         
+     
     }
+    
     .slider__arrow{
         width: 100%;
     }
@@ -430,12 +495,26 @@ footer{
     .subtitle{
         font-size: 2rem;
         margin-bottom: 15px;
+        
     }
     .slider__review{
-        font-size: 1rem;
+        font-size: 0.8rem;
+        text-align: center;
         line-height: 1.6;
     }
     .cartaproyecto{
         width: 95%;
+    }
+    
+}
+@media (max-width:455px){
+    .banner-content h1{
+        padding: 10px;
+        font-size: 30px;
+    }
+    .slider__review{
+        font-size: 0.6rem;
+        text-align: center;
+        line-height: 1.6;
     }
 }
